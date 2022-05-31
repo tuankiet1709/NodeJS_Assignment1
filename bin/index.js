@@ -5,10 +5,11 @@ const generate_database = require('../lib/database_generator');
 const program = require('commander');
 
 switch(process.argv[2]){
-    case "grmvc":
+    case "mvc":
         generate_mvc.generate_mvc()
+        
         break;
-    case "grdb":
+    case "create db":
         generate_database.generate_database()
         break;
     case "help":
