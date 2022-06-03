@@ -16,14 +16,13 @@ To create a mvc:
  2. Choose database (mysql or mongodb)
  3. Input database connection
     - with MySQL: 
-        ```
+    ```
         host: localhost,
         user: root,
         password: root,
         port: 33060,
-        charset: "utf8",
         database: SalaryChange,
-        ```  
+    ```  
     - With MongoDB:
     ```
         host: localhost,
@@ -60,3 +59,11 @@ To create a mvc:
        npm start
     ```    
  7. access http://localhost:3000
+ 8. Run unit test
+    ```
+       npm run test
+    ```    
+ 9. Run coverage test
+    ```
+       npm run coverage
+    ```  
