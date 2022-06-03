@@ -1,24 +1,17 @@
 #!/usr/bin/env node
 
-const generate_mvc = require('../lib/create_mvc_structure');
-const generate_database = require('../lib/database_generator');
-const program = require('commander');
+const {generate_mvc} = require('../lib/create_mvc_structure');
 
 switch(process.argv[2]){
     case "mvc":
-        generate_mvc.generate_mvc()
-        
-        break;
-    case "create db":
-        generate_database.generate_database()
+        generate_mvc();
         break;
     case "help":
         console.log(process.argv);
-        console.log(`Option:\n\tgrmvc: generate mvc structure\n\tgrdb: generate database
-        `);
+        console.log(`Option:\n\tmvc: generate mvc structure`);
         break;
     default:
-        console.log("use help to show list cli")
+        console.log(`use "help" to show list cli`)
         break;
 }
 
